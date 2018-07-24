@@ -5,16 +5,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Randoms
+namespace MINTEC_MSSO.Utilities.TabTracking
 {
-    //Minimal interface without the need to expose methods for saving
+    /// <summary>
+    /// Minimal interface without the need to expose methods for saving.
+    /// Used for tracking movement between tabs within MSSO
+    /// </summary>
     public interface ITrackable
     {
         event EventHandler Enter;
         event FormClosedEventHandler FormClosed;
-        event EventHandler Shown;
+        event EventHandler VisibleChanged;
 
         string Text { get; }
+        bool Visible { get; }
         bool Focus();
+
     }
 }

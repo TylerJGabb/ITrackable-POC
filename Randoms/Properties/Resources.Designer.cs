@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Randoms.Properties
+namespace Trackability.Properties
 {
 
 
